@@ -6,5 +6,5 @@ systemd zpool scrub service and timer
     install -m 644 -o root -g root zpool-scrub@.timer /etc/systemd/system
 
     systemctl daemon-reload
-    systemctl enable zpool-scrub@pool.timer
-    systemctl start zpool-scrub@pool.timer
+    systemctl enable zpool-scrub@tank.timer
+    systemctl start zpool-scrub@tank.timer
