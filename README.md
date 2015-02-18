@@ -8,4 +8,3 @@ systemd zpool scrub service and timer
     systemctl daemon-reload
     systemctl enable zpool-scrub@pool.timer
     systemctl start zpool-scrub@pool.timer
-
