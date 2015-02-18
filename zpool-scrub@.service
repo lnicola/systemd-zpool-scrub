@@ -9,4 +9,3 @@ ExecStop=/usr/bin/zpool scrub -s %i
 RemainAfterExit=yes
 Requires=zfs.target
 After=zfs.target
-
