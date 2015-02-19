@@ -1,5 +1,7 @@
 [Unit]
 Description=Scrub ZFS Pool
+Requires=zfs.target
+After=zfs.target
 
 [Service]
 Type=oneshot
@@ -7,5 +9,3 @@ ExecStartPre=-/usr/bin/zpool scrub -s %i
 ExecStart=/usr/bin/zpool scrub %i
 ExecStop=/usr/bin/zpool scrub -s %i
 RemainAfterExit=yes
-Requires=zfs.target
-After=zfs.target
