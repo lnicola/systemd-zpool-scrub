@@ -8,4 +8,3 @@ Type=oneshot
 ExecStartPre=-/usr/bin/zpool scrub -s %i
 ExecStart=/usr/bin/zpool scrub %i
 ExecStop=/usr/bin/zpool scrub -s %i
-RemainAfterExit=yes
