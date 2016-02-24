@@ -1,3 +1,4 @@
+# /etc/systemd/system/zpool-scrub@.service
 [Unit]
 Description=Scrub ZFS Pool
 Requires=zfs.target
@@ -7,4 +8,3 @@ After=zfs.target
 Type=oneshot
 ExecStartPre=-/usr/bin/zpool scrub -s %i
 ExecStart=/usr/bin/zpool scrub %i
-ExecStop=/usr/bin/zpool scrub -s %i
