@@ -1,4 +1,3 @@
-# /etc/systemd/system/zpool-scrub@.service
 [Unit]
 Description=Scrub ZFS Pool
 Requires=zfs.target
